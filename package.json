@@ -1,0 +1,21 @@
+{
+  "name": "chaifinance",
+  "version": "1.0.0",
+  "description": "QA Automation Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ui-regression":"cypress run --browser edge --spec cypress/e2e/Integrations/*.js",
+    "ui-regression-allure":"cypress run --browser edge --spec cypress/e2e/Integrations/*.js --env allure=true",
+    "allure:clear":"rm -r allure-results/ allure-report cypress/screenshots || true",
+    "allure:report":"allure generate allure-results --clean -o allure-report",
+    "allure:history":"mv -f allure-report/history allure-results/history && rm -r allure-reort || true"
+  },
+  "author": "Ajay Dhakar",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "cypress": "^12.14.0"
+  }
+}
