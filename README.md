@@ -17,7 +17,7 @@ Before running the automation script, ensure that you have the following softwar
 To install and set up the PortOne Global Automation Script locally, follow these steps:
 1. Clone the repository:
    ```shell
-   git clone https://github.com/your-username/ChaiFinance_QA.git
+   git clone https://github.com/Ajay-Singh-Dhakad/ChaiFinance_QA.git
    ```
 2. Navigate to the project directory:
    ```shell
